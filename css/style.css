@@ -97,7 +97,7 @@ html, body{
 	 
       display: block;
       background-color: #262626;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
       
     }
 
@@ -182,11 +182,12 @@ html, body{
 
  .about{
      
-     background-color:#29282D; 
+     background-color:black; 
+	
  }
 
  .about .content {
-    padding: 0 80px;
+   
   }
   
   .about .content h3 {
@@ -211,6 +212,12 @@ html, body{
     margin-bottom: 0;
   }
   
+  @media (min-width: 200px) and (max-width: 767px){
+	  #hero .btn-contact{
+		  margin-top:50px;
+	  }
+	  
+  }
  @media (max-width: 1024px) {
     .about .content, .about .accordion-list {
       padding-left: 0;
@@ -221,6 +228,7 @@ html, body{
   @media (max-width: 992px) {
     .about .content {
       padding-top: 30px;
+	  padding-bottom:50px;
     }
     .about .accordion-list {
       padding-bottom: 30px;
@@ -249,15 +257,17 @@ html, body{
     float:right;
     transform:translate(150px,150px);
      
-     
-    
     }
 
 
   .gallery {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 100px;
-    background-color: black;
+   
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-image: url('main7.jpg');
   }
   
   .gallery .gallery-item {
@@ -293,9 +303,16 @@ html, body{
   }
   
 .menu{
-  padding-top: 100px;
+  /*padding-top: 100px;
   background-color:#29282D ;
   padding-bottom: 100px;
+  */
+    
+	  padding-bottom: 10px;
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-image: url('main7.jpg');
 }
 
 .img-fluid{
@@ -306,7 +323,7 @@ html, body{
 
 @media (min-width: 200px) and (max-width: 767px){
   .menu{
-    padding-top: 200px;
+    padding-top: 7.5%;
   }
 
 }
@@ -341,7 +358,7 @@ html, body{
     font-size: 15;
     font-style: italic;
     padding: 0;
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
   }
   
   #footer .social-links {
